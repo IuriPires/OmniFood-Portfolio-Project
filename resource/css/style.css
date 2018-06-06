@@ -281,7 +281,7 @@ h4{
 }
 
 /*Buttons*/
-.btn:link,.btn:visited{
+.btn:link,.btn:visited,input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300%;
@@ -294,7 +294,7 @@ h4{
 
 
 
-.btn-full:link, .btn-full:visited{
+.btn-full:link, .btn-full:visited,input[type=submit] {
     background-color: #e67e22;
     color: white;
     border: 1px solid #e67e22;
@@ -315,7 +315,7 @@ h4{
     color: white;
 }
 
-.btn-full:hover, .btn-full:active{
+.btn-full:hover, .btn-full:active,input[type=submit]:hover,input[type=submit]:active{
     background-color: #bf6516;
     color: white;
     border: 1px solid #bf6516;
@@ -432,4 +432,110 @@ cite img{
 
 /*Seção de formulário*/
 
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+    
+}
 
+input[type=text], /*Seletor especial que seleciona por tipos de input*/
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+*:focus {outline: none;} /*Tira o foco azul das caixas de input*/
+
+/*Rodape da página */
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+    
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+    
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    display: inline-block;
+    margin-right: 0px;
+}
+
+
+.footer-nav li a,
+.social-links li a{
+    text-decoration: none;
+    color: #888;
+    border: 0;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+    
+}
+
+.social-links li a:link,
+.social-links li a:active{
+    font-size: 170%;
+    
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+    
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+    
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+    
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+    
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 30px;
+}
